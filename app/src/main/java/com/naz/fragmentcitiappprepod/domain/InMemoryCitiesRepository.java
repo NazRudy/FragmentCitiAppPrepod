@@ -30,7 +30,12 @@ public class InMemoryCitiesRepository implements CitiesRepository {
     @Override
     public List<City> getAll() {
         ArrayList<City> result = new ArrayList<>();     // Формируем список городов
-        result.add(new City(context.getString(R.string.msk), R.drawable.msc));
+        result.add(new City(context.getString(R.string.msk), R.drawable.msc)); // Москва
+        result.add(new City(context.getString(R.string.ebrg), R.drawable.ebrg)); // Екатеринбург
+        result.add(new City(context.getString(R.string.nsk), R.drawable.nsk)); // Новосибирск
+        result.add(new City(context.getString(R.string.sam), R.drawable.sam)); // Самара
+        result.add(new City(context.getString(R.string.spb), R.drawable.spb)); // Санкт-Петербург
+
         return result;
     }
 
